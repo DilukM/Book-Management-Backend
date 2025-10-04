@@ -24,6 +24,8 @@ type Book {
   author: String!
   publishedYear: Float!
   genre: String!
+  description: String
+  isbn: String
 }
 
 type DeleteBookResponse {
@@ -62,6 +64,8 @@ input CreateBookInput {
   author: String!
   publishedYear: Float!
   genre: String!
+  description: String
+  isbn: String
 }
 
 input UpdateBookInput {
@@ -69,4 +73,6 @@ input UpdateBookInput {
   author: String
   publishedYear: Float
   genre: String
+  description: String
+  isbn: String
 }

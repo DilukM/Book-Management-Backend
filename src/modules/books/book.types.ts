@@ -14,6 +14,12 @@ export class CreateBookInput {
 
   @Field()
   genre: string;
+
+  @Field({ nullable: true })
+  description?: string;
+
+  @Field({ nullable: true })
+  isbn?: string;
 }
 
 @InputType()
@@ -29,6 +35,12 @@ export class UpdateBookInput {
 
   @Field({ nullable: true })
   genre?: string;
+
+  @Field({ nullable: true })
+  description?: string;
+
+  @Field({ nullable: true })
+  isbn?: string;
 }
 
 @ObjectType()

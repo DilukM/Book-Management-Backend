@@ -16,4 +16,10 @@ export class Book {
 
   @Field()
   genre: string;
+
+  @Field({ nullable: true })
+  description?: string;
+
+  @Field({ nullable: true })
+  isbn?: string;
 }
