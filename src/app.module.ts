@@ -14,7 +14,7 @@ import { BookModule } from './modules/books/book.module';
     }),
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
-      autoSchemaFile: true, // Use in-memory schema instead of file
+      autoSchemaFile: true, 
       playground: true,
       introspection: true,
     }),
